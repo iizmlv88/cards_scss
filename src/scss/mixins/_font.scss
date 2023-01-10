@@ -1,0 +1,61 @@
+
+@mixin os-normal-600-11-15 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: $blue;
+    
+}
+
+@mixin os-normal-400-11-15 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    
+}
+
+@mixin dm-normal-400-20-25 {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $heading-text;
+}
+
+@mixin dm-normal-400-40-46 {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: $heading-text;
+}
+
+@mixin os-normal-400-18-27 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $body-text;
+}
+
+
+
+@mixin os-normal-400-13-19 {
+    justify-content: flex-start;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: $body-text;
+}
+ 
+
+

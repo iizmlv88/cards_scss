@@ -1,0 +1,82 @@
+// $box-color: magenta;
+// $text-decoration: underline;
+// $green: green;
+// $pink: pink ;
+
+// @mixin flex ($direction, $wrap, $gap){
+//     display: flex;
+//     flex-flow: $direction $wrap;
+//     gap: $gap;
+// }
+
+// @mixin box-color ($backgroundColor) {
+//     @include flex( row, wrap, 15px);
+//     background: $backgroundColor;
+// }
+
+// h1 {
+//     text-decoration: $text-decoration;
+// }
+
+// %box-style {
+//     width: 70px;
+//     height: 70px;
+//     background-color: $box-color;
+
+// }
+
+
+
+// %containerStyle {
+//     background: gray;
+        
+//         width: 320px;
+        
+//         padding: 10px ;
+//         @include flex;
+// }
+
+
+
+// .flex-container {
+//     @extend %containerStyle;
+//     div {
+       
+//         @extend %box-style;
+//         &:nth-child(1) {
+//             background-color: lime;
+//         }
+        
+//         &:nth-child(2) {
+//             @include box-color (black);
+
+//         }
+//          &:nth-child(3) {
+//              @include box-color ($pink);
+    
+//          }
+//         &:nth-child(4) {
+//             @include box-color ($green);
+//         }
+// }
+// }
+
+
+// .image-wrapper{
+//     @extend %containerStyle;
+//     div{
+//         @extend %box-style;
+//         background-color: aqua;
+//         background-position: center;
+//         background-size: cover ;
+//     }
+// }
+
+
+
+
+// @for $i from 1 through 12 {
+//     .item_#{$i} {
+//         background-image: url("../img/images/#{$i}.jpeg");
+//     }
+// }

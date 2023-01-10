@@ -1,0 +1,213 @@
+.wrapper {
+    background: $background;
+    width: 100%;
+    min-height: 100vh;
+    @include flex-c;
+}
+
+.container {
+    padding: 111px 0;
+    @include flex-c;
+    min-width: 320px;
+    width: 90%;
+    max-width: $s-width;
+    gap: 32px;
+    @include sm-md-lg {
+        min-width: 318px;
+        max-width: 40%;
+    }
+    @include xl {
+        max-width: 1002px;
+    }
+
+.cards {
+    @include flex-r;
+    background: $background-card;
+    justify-content: flex-start;
+    height: $s-height;
+    max-width: $s-width;
+    border-radius: $borderRadius16;
+    gap: 16px;
+    @include sm-md-lg {
+        max-width: 100%;
+        height: 400px;
+        @include flex-c;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    @include xl {
+        width: 1002px;
+        @include flex-r;
+        justify-content: flex-start;
+        gap: 35px;
+    }
+}
+
+.next {
+    .svg_block {
+        background: $background-nc;
+    }
+}
+
+.third {
+    .svg_block {
+        background: $background-tc;
+    }
+}
+.svg_block {
+    height: 100%;
+    @include flex-c;
+    background: $background-fc;
+    border-radius: $borderRadius16-0-0-16;
+    padding: 0 5%;
+    @include sm-md-lg {
+        padding: 0;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+    @include xl {   
+        padding: 0 80px;
+        width: 400px;
+        height: 100%;
+        border-radius: $borderRadius16-0-0-16;
+    }
+}
+
+.svg_block > div {
+    @include flex-c;
+}
+
+.svg {
+    @include svg-s;
+    @include sm-md-lg {
+        @include svg-sml;
+    }
+    @include xl {
+        @include svg-xl;
+    }
+}
+
+.text {
+    @include flex-c;
+    padding-right: 25px;
+    gap: 16px;
+    justify-content: space-between;
+    @include sm-md-lg {
+        @include flex-c;
+        padding: 0 24px 24px;
+        gap: 15px;
+    }
+
+    @include xl {
+        gap: 25px;
+        padding: 0 40px 0 0;
+    }
+
+}
+.gap {
+    @include sm-md-lg {
+        @include flex-c;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    @include xl {
+        gap: 15px;
+    }
+}
+
+.additional_text {
+    @include flex-r;
+    justify-content: space-between;
+    width: 100%;
+    @include os-normal-600-11-15;
+    color: $grey;
+    @include xl {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+
+.additional_text > div:nth-child(even) {
+    @include os-normal-400-11-15;
+    color: $grey;
+    @include xl {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.heading_text {
+    @include dm-normal-400-20-25;
+    @include xl {
+        @include dm-normal-400-40-46;
+    }
+}
+
+.none {
+    display: none;
+    @include sm-md-lg {
+        display: contents;
+        @include flex-c;
+        gap: 14px;
+    }
+    @include xl {
+        gap: 25px;
+    }
+}
+
+.big_text {
+    display: none;
+    @include xl {
+        display: contents;
+        @include os-normal-400-18-27;
+    }
+}
+  
+.avatar_block {
+    @include flex-r;
+    justify-content: space-between;
+    width: 100%;
+    @include os-normal-600-11-15;
+    @include xl {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.avatar {
+    @include flex-r;
+    gap: 8px;
+}
+
+.small_text {
+    @include flex-r;
+    @include os-normal-400-13-19;
+    @media (min-width: 1280px) {
+        display: none;
+    }
+}
+
+ 
+ .avatar_big {
+    @include sm-md-lg {
+         display: none;
+     }
+    @include xl {
+         display: contents;
+     }
+ }
+.avatar_small {
+    @include sm-md-lg {
+        display: contents;
+    }
+    @include xl {
+        display: none;
+    }
+}
+
+}
+
+
+
+

@@ -1,0 +1,14 @@
+/* stylelint-disable */
+
+@mixin sm-md-lg {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
